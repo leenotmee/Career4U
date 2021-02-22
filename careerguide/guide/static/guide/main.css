@@ -1,0 +1,32 @@
+.body{
+	background-color:powderblue;
+}
+
+.head{
+  color: lightyellow;
+  background-color: darkblue;
+  font-size: 50px;
+    margin-left: 0.2%;
+    margin-top: -10;
+    padding-left: 650px;
+    font-family: Century Gothic;
+}
+
+.para{
+	margin-top: 5%;
+	padding-left: 0px;
+	color: black;
+	font-size: 30px;
+	text-align:center;
+	font-family:'Lucida Handwriting', cursive;
+
+}
+
+.butty{
+	background-color: black;
+	color: white;
+	margin-left: 45%;
+	font-size: 25px;
+	font-family:'Lucida Handwriting', cursive;
+	}
+
