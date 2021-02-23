@@ -1,0 +1,536 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'guide/main.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Career4U</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+    <a class="nav-link" href="home">Home</a>
+  </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact Us</a>
+    </li>
+
+  </ul>
+</nav>
+<div class="p-3 mb-2 bg-primary text-light">
+    <div class="text-center">
+<h3 class="display-1"><br>Aptitude Test</h3>
+<p class="lead">Answer these questions it won't take much of your time we promise!! <br> will help you anayse strength and weakness<br>Answer honestly and results will really prove to be helpful.</p>
+</div>
+  <form action="result" method="post">
+    {%csrf_token%}
+<div class="container mt-3">
+
+
+
+    
+<p class="lead"><em><strong>Linguistic Ability</strong></em></p>
+
+
+        <div class="row" >
+            <p style = "text-indent-left: 40px">1) Find the word which means the same:  Memorable</p>        
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Unforgettable" id="Unforgettable" name="ans">
+                <label class="form-check-label" for="apple">Unforgettable</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Interesting" id="Interesting" name="ans">
+                <label class="form-check-label" for="mango">Interesting</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Eventful" id="Eventful" name="ans">
+                <label class="form-check-label" for="apple">Eventful</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Attractive" id="Attractive" name="ans">
+                <label class="form-check-label" for="mango">Attractive</label>
+            </div>
+            <br>
+        </div>
+
+        
+
+        <div class="row">
+            <p style = "text-indent-left: 40px">2) Find the word spelled correctly</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Government" id="Government" name="ans">
+                <label class="form-check-label" for="apple">Government</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Goverment" id="Goverment" name="ans">
+                <label class="form-check-label" for="mango">Goverment</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Govenment" id="Govenment" name="ans">
+                <label class="form-check-label" for="apple">Govenment</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Govment" id="Govment" name="ans">
+                <label class="form-check-label" for="mango">Govment</label>
+            </div>
+            <br>
+        </div>
+
+  
+
+        <div class="row">
+            <p style = "text-indent-left: 40px">3) Choose the nearest meaning for the proverb: Cry over spilt milk</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Getting out of difficulty" id="Getting out of difficulty" name="ans">
+                <label class="form-check-label" for="apple">Getting out of difficulty</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Holding hatred against someone" id="Holding hatred against someone" name="ans">
+                <label class="form-check-label" for="mango">Holding hatred against someone</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Complaining about loss from the past" id="Complaining about loss from the past" name="ans">
+                <label class="form-check-label" for="apple">Complaining about loss from the past</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Anticipating about future and crying" id="Anticipating about future and crying" name="ans">
+                <label class="form-check-label" for="mango">Anticipating about future and crying</label>
+            </div>
+            <br>
+        </div>
+
+
+ <div class="row">
+            <p style = "text-indent-left: 40px">4) Choose the nearest meaning for the proverb: Burn the midnight oil</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Work late into the night" id="Work late into the night" name="ans">
+                <label class="form-check-label" for="apple">Work late into the night</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Would never like to something" id="Would never like to something" name="ans">
+                <label class="form-check-label" for="mango">Would never like to something</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Work hard to chieve targets" id="Work hard to chieve targets" name="ans">
+                <label class="form-check-label" for="apple">Work hard to chieve targets</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="To finish things on time" id="To finish things on time" name="ans">
+                <label class="form-check-label" for="mango">To finish things on time</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">5) Choose the nearest meaning for the proverb: To keep one's temper</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="To stop talking" id="To stop talking" name="ans">
+                <label class="form-check-label" for="apple">To stop talking</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="To hold one's anger" id="To hold one's anger" name="ans">
+                <label class="form-check-label" for="mango">To hold one's anger</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="To be aloof" id="To be aloof" name="ans">
+                <label class="form-check-label" for="apple">To be aloof</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="To become angry" id="To become angry" name="ans">
+                <label class="form-check-label" for="mango">To become angry</label>
+            </div>
+            <br>
+        </div>
+
+<p class="lead"><em><strong>Verbal Reasoning</strong></em></p>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">1) Complte the analogy: Water:Tank::Money:_______</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Spend" id="Spend" name="ans">
+                <label class="form-check-label" for="apple">Spend</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Bank" id="Bank" name="ans">
+                <label class="form-check-label" for="mango">Bank</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Gold" id="Gold" name="ans">
+                <label class="form-check-label" for="apple">Gold</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Manager" id="Manager" name="ans">
+                <label class="form-check-label" for="mango">Manager</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">2) Complte the analogy: Wood:Carpenter::Clay:_______</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Potter" id="Potter" name="ans">
+                <label class="form-check-label" for="apple">Potter</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Sculptor" id="Sculptor" name="ans">
+                <label class="form-check-label" for="mango">Sculptor</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Architect" id="Architect" name="ans">
+                <label class="form-check-label" for="apple">Architect</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Mason" id="Mason" name="ans">
+                <label class="form-check-label" for="mango">Mason</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">3) Complte the analogy: Comb:Teeth::Book:_______</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Page" id="Page" name="ans">
+                <label class="form-check-label" for="apple">Page</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Word" id="Word" name="ans">
+                <label class="form-check-label" for="mango">Word</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Knowledge" id="Knowledge" name="ans">
+                <label class="form-check-label" for="apple">Knowledge</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Mason" id="Mason" name="ans">
+                <label class="form-check-label" for="mango">Letter</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">4) Complte the analogy: Breeze:Cyclone::Rain:_______</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Earthquake" id="Earthquake" name="ans">
+                <label class="form-check-label" for="apple">Earthquake</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Storm" id="Storm" name="ans">
+                <label class="form-check-label" for="mango">Storm</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Drizzle" id="Drizzle" name="ans">
+                <label class="form-check-label" for="apple">Drizzle</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Flood" id="Flood" name="ans">
+                <label class="form-check-label" for="mango">Flood</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">5) Two words are missing from the analogy find the most appropriate one:____:Red::Earth:____</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Mars----Blue" id="Mars----Blue" name="ans">
+                <label class="form-check-label" for="apple">Mars----Blue</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Jupiter----Orange" id="Jupiter----Orange" name="ans">
+                <label class="form-check-label" for="mango">Jupiter----Orange</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Mercury----Brown" id="Jupiter----Orange" name="ans">
+                <label class="form-check-label" for="apple">Jupiter----Orange</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Saturn----Yellow" id="Saturn----Yellow" name="ans">
+                <label class="form-check-label" for="mango">Saturn----Yellow</label>
+            </div>
+            <br>
+        </div>
+
+<p class="lead"><em><strong>Numerical Ability</strong></em></p>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">1) 2400, 1200, 600, 300, ?</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="0" id="0" name="ans">
+                <label class="form-check-label" for="apple">0</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="100" id="100" name="ans">
+                <label class="form-check-label" for="mango">100</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="150" id="150" name="ans">
+                <label class="form-check-label" for="apple">150</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="200" id="200" name="ans">
+                <label class="form-check-label" for="mango">200</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">2) 8, 27, 64, 125, ?</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="216" id="216" name="ans">
+                <label class="form-check-label" for="apple">216</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="196" id="196" name="ans">
+                <label class="form-check-label" for="mango">196</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="169" id="169" name="ans">
+                <label class="form-check-label" for="apple">169</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="225" id="225" name="ans">
+                <label class="form-check-label" for="mango">225</label>
+            </div>
+            <br>
+        </div>
+
+
+<div class="row">
+            <p style = "text-indent-left: 40px">3) 999.99-99.99+9999</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="10899.99" id="10899.99" name="ans">
+                <label class="form-check-label" for="apple">10899.99</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="11899" id="11899" name="ans">
+                <label class="form-check-label" for="mango">11899</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="11899.99" id="11899.99" name="ans">
+                <label class="form-check-label" for="apple">11899.99</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="10899" id="10899" name="ans">
+                <label class="form-check-label" for="mango">10899</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">4) The product of two numbers is 56 and the sum of these two numbers is 15. Find these two numbers.</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="9 and 6" id="9 and 6" name="ans">
+                <label class="form-check-label" for="apple">9 and 6</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="14 and 4" id="14 and 4" name="ans">
+                <label class="form-check-label" for="mango">14 and 4</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="8 and 7" id="8 and 7" name="ans">
+                <label class="form-check-label" for="apple">8 and 7</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="7 and 9" id="7 and 9" name="ans">
+                <label class="form-check-label" for="mango">7 and 9</label>
+            </div>
+            <br>
+        </div>
+
+
+<div class="row">
+            <p style = "text-indent-left: 40px">5) Currently my age is 11 times that of my daughter. In 4 years my age would be 6 times that of my daughter's age. What is my current age?</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="22 years" id="22 years" name="ans">
+                <label class="form-check-label" for="apple">22 years</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="63 Years" id="63 Years" name="ans">
+                <label class="form-check-label" for="mango">63 Years</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="44 Years" id="44 Years" name="ans">
+                <label class="form-check-label" for="apple">44 Years</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="33 Years" id="33 Years" name="ans">
+                <label class="form-check-label" for="mango">33 Years</label>
+            </div>
+            <br>
+        </div>
+
+
+<p class="lead"><em><strong></strong></em>Perceptual Aptitude</p>
+
+
+<div class="row">
+            <p style = "text-indent-left: 40px">1) 39461084</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="39416084" id="39416084" name="ans">
+                <label class="form-check-label" for="apple">39416084</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="39461840" id="39461840" name="ans">
+                <label class="form-check-label" for="mango">39461840</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="39461084" id="39461084" name="ans">
+                <label class="form-check-label" for="apple">39461084</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="3946180" id="3946180" name="ans">
+                <label class="form-check-label" for="mango">3946180</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">2) vWtfMnIL</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="VWtfMnIL" id="VWtfMnIL" name="ans">
+                <label class="form-check-label" for="apple">VWtfMnIL</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="vWtfMnIL" id="vWtfMnIL" name="ans">
+                <label class="form-check-label" for="mango">vWtfMnIL</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="vWTfMnIL" id="vWTfMnIL" name="ans">
+                <label class="form-check-label" for="apple">vWTfMnIL</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="vWtfMNIL" id="vWtfMNIL" name="ans">
+                <label class="form-check-label" for="mango">vWtfMNIL</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">3) 32983403</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="39283403" id="39283403" name="ans">
+                <label class="form-check-label" for="apple">39283403</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="39238403" id="39238403" name="ans">
+                <label class="form-check-label" for="mango">39238403</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="32938043" id="32938043" name="ans">
+                <label class="form-check-label" for="apple">32938043</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="32983403" id="32983403" name="ans">
+                <label class="form-check-label" for="mango">32983403</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">4) aMhoFOFU</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="amhoFOFU" id="amhoFOFU" name="ans">
+                <label class="form-check-label" for="apple">amhoFOFU</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="aMhoFOFU" id="aMhoFOFU" name="ans">
+                <label class="form-check-label" for="mango">aMhoFOFU</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="aMhoFFOU" id="aMhoFFOU" name="ans">
+                <label class="form-check-label" for="apple">aMhoFFOU</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="aMhOoFFU" id="aMhOoFFU" name="ans">
+                <label class="form-check-label" for="mango">aMhOoFFU</label>
+            </div>
+            <br>
+        </div>
+
+
+<div class="row">
+            <p style = "text-indent-left: 40px">5) 3037KxRd</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="3073KxRd" id="3073KxRd" name="ans">
+                <label class="form-check-label" for="apple">3073KxRd</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="3037KxRd" id="3037KxRd" name="ans">
+                <label class="form-check-label" for="mango">3037KxRd</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="3037KXRd" id="3037KXRd" name="ans">
+                <label class="form-check-label" for="apple">3037KXRd</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="3037KXRd" id="3037KXRd" name="ans">
+                <label class="form-check-label" for="mango">3037KXRd</label>
+            </div>
+            <br>
+        </div>
+
+<p class="lead"><em><strong></strong></em>Bonus Questions</p>
+
+
+<div class="row">
+            <p style = "text-indent-left: 40px">1) Where do you find youself in next five years?</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="in your own office with an 8-5 job" id=" in your own office with an 8-5 job" name="ans">
+                <label class="form-check-label" for="apple">in your own office with an 8-5 job</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Studying to become a doctor and do good to society" id="Studying to become a doctor and do good to society" name="ans">
+                <label class="form-check-label" for="mango">Studying to become a doctor and do good to society</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Leading people around you and guiding your team" id="Leading people around you and guiding your team" name="ans">
+                <label class="form-check-label" for="apple">Leading people around you and guiding your team</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Fighting for our country on the border" id="Fighting for our country on the border" name="ans">
+                <label class="form-check-label" for="mango">Fighting for our country on the border</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Doing good for our nation by administering towns and cities" id=""Doing good for our nation by administering towns and cities" name="ans">
+                <label class="form-check-label" for="mango">"Doing good for our nation by administering towns and cities</label>
+            </div>
+            <br>
+        </div>
+
+<div class="row">
+            <p style = "text-indent-left: 40px">2) Which out of these interests you the most?</p>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Leadind a team and making them work together" id=" Leadind a team and making them work together" name="ans">
+                <label class="form-check-label" for="apple">Leadind a team and making them work together</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Helping the people in need" id="Helping the people in need"" name="ans">
+                <label class="form-check-label" for="mango">Helping the people in need"</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="The idea of building something which can help our future generations" id="The idea of building something which can help our future generations" name="ans">
+                <label class="form-check-label" for="apple">The idea of building something which can help our future generations</label>
+            </div>
+            <div class="form-check" style = "margin-left: 40px">
+                <input class="form-check-input" type="checkbox" value="Playing an important role in working of the nation" id="Playing an important role in working of the nation" name="ans">
+                <label class="form-check-label" for="mango">Playing an important role in working of the nation</label>
+            </div>
+            <br>
+        </div>
+
+</div>
+<input type="submit" value="Submit" style = "margin-left: 1200px">
+</form>
+<br><hr class="mt-0 mb-4">
+</div>
+</body>
+</html>
